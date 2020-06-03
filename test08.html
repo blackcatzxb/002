@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<div id="nav"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$("#nav").load( "nav.html");
+</script>
+<p>這是測試8</p>
+<form action="" method="get">
+	<label for="phone">你的大名：</label><br><br>
+	<input type="text" name="id" /><br><br>
+	<label for="phone">你的密碼：(8位數)</label><br><br>
+	<input type="password" pattern="[a-zA-Z0-9]{8,}"><br><br>
+	<label for="phone">你的電話號碼：</label>
+	<input title="tel" id="phone" name="phone" placeholder="0912-123123" pattern="[0-9]{4}-[0-9]{3}"><br><br>
+	<label for="phone">textarea</label><br><br>
+	<textarea style="width: 300px;height: 100px;"></textarea>
+	<br><br>
+	<select name="科系">
+	<option value="Taipei">科管系</option>
+	<option value="Taoyuan">醫管系</option>
+	<option value="Hsinchu">行管系</option>
+	<option value="Miaoli">護理系</option>
+	<option value="Miaoli">醫放系</option>
+	</select><br><br>
+	<p>請選擇你的年齡</p>
+	<input type="radio" name="age" value="-1" checked> -1 <br>
+	<input type="radio" name="age" value="0-30"> 0-30<br>
+	<input type="radio" name="age" value="31-60"> 31-60<br>
+	<input type="radio" name="age" value="61-100"> 61-100<br>
+	<br><br>
+
+	<input type="checkbox" name="vehicle1" value="Bike">
+	<label for="vehicle1"> I have a bike</label><br>
+	<input type="checkbox" name="vehicle2" value="Car" checked>
+	<label for="vehicle2"> I have a car</label><br>
+	<input type="checkbox" name="vehicle3" value="Boat" >
+	<label for="vehicle3"> I have a boat</label><br><br>
+
+	<input type="submit" value="送出表單"/>
+
+</form>
+
+</body>
+</html>
